@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="inputs">
+      <h2>Day</h2>
+      <input type="number" id="day" name="day" placeholder="DD" />
+      <h2 id="h2">Month</h2>
+      <input type="number" id="month" name="month" placeholder="MM" />
+      <h2 id="second-h2">Year</h2>
+      <input type="number" id="year" name="year" placeholder="YYYY" />
+      <br />
+      <span id="message"></span>
+    </div>
+    <br />
+    <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+    <div class="line"></div>
+    <br />
+    <div class="resultsContainer">
+      <h1 class="h1"><i><p id="yearsParagraph" class="par">--</p> <p class="paragraph" id="years">years</p></i></h1>
+      <h1 class="h1"><i><p id="monthsParagraph" class="par">--</p> <p id="months" class="paragraph">months</p></i></h1>
+      <h1 class="h1"><i><p id="daysParagraph" class="par">--</p> <p id="days" class="paragraph">days</p></i></h1>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
